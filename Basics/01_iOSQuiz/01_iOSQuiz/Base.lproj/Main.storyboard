@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,53 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ1-WQ-18s">
+                                <rect key="frame" x="18" y="28" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="btnAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z4T-Ae-mJ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmT-4G-xkw">
+                                <rect key="frame" x="541" y="28" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOs-Ks-gth"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FlQ-DA-h5I">
+                                <rect key="frame" x="272" y="289" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="sdasdaSDasdasDasdasDasdasDasdasDasdasDasdasDas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvK-QM-MGN">
+                                <rect key="frame" x="185" y="96" width="231" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="LYD-Dh-Zdq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CJ1-WQ-18s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9J8-9q-Ecj"/>
+                            <constraint firstItem="AvK-QM-MGN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9lU-I6-pZx"/>
+                            <constraint firstItem="pmT-4G-xkw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JmN-e5-pWK"/>
+                            <constraint firstItem="FlQ-DA-h5I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MR4-ng-GN0"/>
+                            <constraint firstItem="AvK-QM-MGN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="SS4-JI-tqk"/>
+                            <constraint firstItem="pmT-4G-xkw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="pPW-kZ-B7o"/>
+                            <constraint firstItem="CJ1-WQ-18s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vdc-vL-sdH"/>
+                            <constraint firstItem="FlQ-DA-h5I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="269" id="y6p-17-l3m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblAnswer" destination="FlQ-DA-h5I" id="dOg-bR-Hgh"/>
+                        <outlet property="lblQuestion" destination="AvK-QM-MGN" id="mjN-4M-oN1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
