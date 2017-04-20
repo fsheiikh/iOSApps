@@ -1,1 +1,1 @@
-<img src="http://i.imgur.com/6TJDIwN.gif">
+<img src="quiz.gif">
