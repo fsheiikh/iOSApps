@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
      var idx : Int = 0
     
+   
+    
+    @IBOutlet weak var btnC: UIButton!
     
     
     @IBAction func btnCaller(sender: UIButton) {
@@ -34,6 +37,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnC.layer.cornerRadius = 20
+        btnC.clipsToBounds = true
         
       
         // Do any additional setup after loading the view, typically from a nib.
