@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func btn1(sender: UIButton) {
         sender.enabled = false
+        print(sender)
         
         
         turn += 1
@@ -67,24 +68,14 @@ class ViewController: UIViewController {
     
     func flexFix()
     {
-        if(flex == 0)
-        {
-            flex = 1
-        }
-        else
-        {
-            flex = 0
-        }
+        (flex == 0) ? (flex = 1) : (flex = 0)
     }
     
     func disableAll() //disbles all buttons, invoked once there is a winner
     {
         buttonsArray = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9]
         
-        for button in buttonsArray!
-        {
-            button.enabled = false
-        }
+        for button in buttonsArray! { button.enabled = false }
     }
     
     @IBAction func btnReset(sender: UIButton) {

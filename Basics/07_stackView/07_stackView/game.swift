@@ -35,17 +35,11 @@ class TicTcToe
             var matches : Bool = true
             for number in combo //each element in that array
             {
-                if(!(player.score.contains(number))) //if all three elemenst in one array are present in players score, match = true and winner is declared
-                {
-                    matches = false
-                }
-            
+                
+                if(!(player.score.contains(number))) { matches = false } //if all 3 elements in one array are present in players score, match = true, winner declared
             }
             
-            if(matches == true)
-            {
-                return true
-            }
+            if(matches == true) { return true }
         }
         
         return false

@@ -53,7 +53,7 @@
                                                     <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csW-7v-flW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-bm-l6P">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-bm-l6P" customClass="customButton" customModule="_7_stackView" customModuleProvider="target">
                                                 <rect key="frame" x="402" y="0.0" width="199" height="146"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
