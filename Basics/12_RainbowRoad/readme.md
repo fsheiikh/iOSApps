@@ -1,1 +1,1 @@
-<img src="RaindbowRoad.png">
+<img src="RainbowRoad.png">
