@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8379AD2DA91BE5DF616F7BE08BC9B3BCBC52E620",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8379AD2DA91BE5DF616F7BE08BC9B3BCBC52E620" : 0,
+    "D29B8BC27B9708F8E00DB8032C0B640E95922ACC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F6057F84-3947-404A-B777-37F3C7986F8B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8379AD2DA91BE5DF616F7BE08BC9B3BCBC52E620" : "Basics\/",
+    "D29B8BC27B9708F8E00DB8032C0B640E95922ACC" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "11_AgingPeople",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "11_AgingPeople\/11_AgingPeople.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fsheiikh\/tipCalculatorSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8379AD2DA91BE5DF616F7BE08BC9B3BCBC52E620"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fsheiikh\/iOSApps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D29B8BC27B9708F8E00DB8032C0B640E95922ACC"
+    }
+  ]
+}
