@@ -12,6 +12,8 @@
 		4675B7B21EC0FEEA00A63354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4675B7B01EC0FEEA00A63354 /* Main.storyboard */; };
 		4675B7B41EC0FEEA00A63354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4675B7B31EC0FEEA00A63354 /* Assets.xcassets */; };
 		4675B7B71EC0FEEA00A63354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4675B7B51EC0FEEA00A63354 /* LaunchScreen.storyboard */; };
+		4675B7BF1EC101FA00A63354 /* AddPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B7BE1EC101FA00A63354 /* AddPeopleController.swift */; };
+		4675B7C11EC1042400A63354 /* PeopleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B7C01EC1042400A63354 /* PeopleProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4675B7B31EC0FEEA00A63354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4675B7B61EC0FEEA00A63354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4675B7B81EC0FEEA00A63354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4675B7BE1EC101FA00A63354 /* AddPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPeopleController.swift; sourceTree = "<group>"; };
+		4675B7C01EC1042400A63354 /* PeopleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				4675B7AC1EC0FEEA00A63354 /* AppDelegate.swift */,
 				4675B7AE1EC0FEEA00A63354 /* ViewController.swift */,
+				4675B7BE1EC101FA00A63354 /* AddPeopleController.swift */,
+				4675B7C01EC1042400A63354 /* PeopleProtocol.swift */,
 				4675B7B01EC0FEEA00A63354 /* Main.storyboard */,
 				4675B7B31EC0FEEA00A63354 /* Assets.xcassets */,
 				4675B7B51EC0FEEA00A63354 /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4675B7AF1EC0FEEA00A63354 /* ViewController.swift in Sources */,
+				4675B7BF1EC101FA00A63354 /* AddPeopleController.swift in Sources */,
+				4675B7C11EC1042400A63354 /* PeopleProtocol.swift in Sources */,
 				4675B7AD1EC0FEEA00A63354 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
