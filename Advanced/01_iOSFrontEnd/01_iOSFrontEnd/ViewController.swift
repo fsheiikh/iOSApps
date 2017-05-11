@@ -28,7 +28,7 @@ class PeopleViewController: UITableViewController {
             
             // see: Swift closure expression syntax
             data, response, error in
-
+  
             //var newPeople : [String] = []
             
             do {
