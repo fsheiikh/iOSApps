@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eA9-tQ-joH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_4_MadLibs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We are adding words...we are *crazy and will *run and *swim in the *house" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7m-or-0AF">
+                                <rect key="frame" x="98" y="272" width="179" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="4ZC-Sh-On7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G7m-or-0AF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kqv-vE-0cg"/>
+                            <constraint firstItem="G7m-or-0AF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oCG-hK-YMj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vsF-kp-Rg2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="DDf-Ak-9hb">
+                            <connections>
+                                <segue destination="GMr-M9-agJ" kind="presentation" id="vTc-65-zLw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="txtWords" destination="G7m-or-0AF" id="jGb-Fz-QTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700.5" y="615.5"/>
+        </scene>
+        <!--Form View Controller-->
+        <scene sceneID="N4z-gA-Mej">
+            <objects>
+                <viewController id="qVZ-aa-CVh" customClass="FormViewController" customModule="_4_MadLibs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O0W-vw-gsN"/>
+                        <viewControllerLayoutGuide type="bottom" id="p7h-Kh-DkC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fbn-KE-AeW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NYU-eZ-Kba">
+                                <rect key="frame" x="26" y="64" width="339" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adj" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwY-qh-kZS">
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="30"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDv-f6-b1b">
+                                        <rect key="frame" x="0.0" y="30" width="339" height="30"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verb" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAU-NX-Q5s">
+                                        <rect key="frame" x="0.0" y="60" width="339" height="30"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="redraw" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Noun" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sR3-X9-SRf">
+                                        <rect key="frame" x="0.0" y="90" width="339" height="30"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="4EJ-0n-jsN"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qod-W0-NLp">
+                                <rect key="frame" x="146" y="192" width="83" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="LNv-jX-dFZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ffM-vU-9Pg" kind="unwind" unwindAction="updateText:" id="Gac-QC-Q6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NYU-eZ-Kba" firstAttribute="top" secondItem="O0W-vw-gsN" secondAttribute="bottom" constant="10" id="78n-lu-G7c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NYU-eZ-Kba" secondAttribute="trailing" constant="-2" id="9ek-Vz-W1I"/>
+                            <constraint firstItem="qod-W0-NLp" firstAttribute="centerX" secondItem="Fbn-KE-AeW" secondAttribute="centerX" id="TCq-Ci-gzE"/>
+                            <constraint firstItem="NYU-eZ-Kba" firstAttribute="centerX" secondItem="Fbn-KE-AeW" secondAttribute="centerX" constant="4" id="bVb-wC-Ml6"/>
+                            <constraint firstItem="qod-W0-NLp" firstAttribute="top" secondItem="NYU-eZ-Kba" secondAttribute="bottom" constant="8" id="s3o-KF-EBx"/>
+                            <constraint firstItem="NYU-eZ-Kba" firstAttribute="leading" secondItem="Fbn-KE-AeW" secondAttribute="leadingMargin" constant="6" id="w5b-4K-wCr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lLc-z8-pwn"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="adjText" destination="gwY-qh-kZS" id="Nwt-EO-Y0P"/>
+                        <outlet property="txtNoun" destination="sR3-X9-SRf" id="9Fn-2a-bcX"/>
+                        <outlet property="txtVerb" destination="kDv-f6-b1b" id="tgO-O3-ZEX"/>
+                        <outlet property="txtVerb2" destination="MAU-NX-Q5s" id="L8S-VL-Ded"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNm-iv-04M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ffM-vU-9Pg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1587.5" y="615.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uF1-8z-ctR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eA9-tQ-joH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vMU-Df-QR7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OCo-4I-qWL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrQ-Nv-3vG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="506"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="puA-fM-S79">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GMr-M9-agJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sri-th-VxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qVZ-aa-CVh" kind="relationship" relationship="rootViewController" id="rO4-aO-OVP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykh-pB-GRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143.5" y="505.5"/>
+        </scene>
+    </scenes>
+</document>
